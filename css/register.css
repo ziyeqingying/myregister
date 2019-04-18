@@ -1,0 +1,222 @@
+@charset 'utf8';
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background: -webkit-linear-gradient(right, #5533ff , #26d9f5); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #5533ff, #26d9f5); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #5533ff, #26d9f5); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #5533ff , #26d9f5); /* 标准的语法 */
+    height: 10px;
+    min-width: 450px;
+    /* min-width: 1000px; */
+}
+
+.container {
+    min-width: 450px;
+    margin: 0 auto;
+
+}
+
+.content {
+    width: 420px;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.steps {
+    height: 90px;
+    width: 385px;
+    margin: 0 auto;
+}
+
+.steps > div {
+    float: left;
+}
+.steps .dots {
+    width: 110px;
+    height: 55px;
+}
+.dots > div {
+    float: left;
+}
+.steps .circle {
+    height: 55px;
+    width: 55px;
+    background: #e3fff2;
+    border-radius: 50%;
+    color: #3ecf8e;
+    text-align: center;
+    line-height: 55px;
+    font-family: "SimHei";
+    font-size: 25px;
+}
+
+.steps .other .circle {
+    background: #e3fff2;
+    color: #a6eac9;
+}
+
+.circle img {
+    width: 20px;
+}
+
+.dots div {
+    height: 7px;
+    width: 7px;
+    background: #dddddd;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.steps .stepname {
+    font-family: "SimHei";
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}   
+.steps .other .stepname{
+    color: #eaeaec;
+}
+
+.title {
+    font-family: "SimHei";
+    font-size: 22px;
+    margin-top: 20px;
+}
+.inputcontainer {
+    margin-top: 20px;
+}
+.inputcontainer input {
+    border: 0 none; /*去掉边框*/
+    outline-style: none; /*去掉轮廓线*/
+    height: 40px;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+}
+.inputcontainer .phonenum {
+    width: 94%;
+    padding-left: 6%;
+    /* box-shadow: 0px 0px 1px #dddddd; */
+}
+.inputcontainer .identifycode  {
+    padding-left: 6%;
+    float: left;
+    width: 51%;
+    box-shadow: 0px 0px 1px #dddddd;
+}
+.inputcontainer .codebtn {
+    float: left;
+    width: 40.5%;
+    margin-left: 2%;
+    background: #3ecf8e;
+    color: white;
+    border-radius: 3px;
+    height: 42px;
+}
+
+.getcode {
+    height: 42px;
+}
+.inputcontainer .send {
+    background: #3ecf8e;
+    color: white;
+    border-radius: 3px;
+    height: 42px;
+    width: 100%;
+}
+.footer1 {
+    /* background: url(../img/footerbg1.png);
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    background-size: 100%; */
+
+    background-image: url(../img/footerbg1.png);
+    background-repeat: no-repeat;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height:10%;
+    /* min-width: 1000px; */
+    min-width: 450px;
+    z-index:-10;
+    zoom: 1;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+}
+
+
+.three {
+    position: relative;
+}
+.three .title {
+    text-align: center;
+}
+
+.three .tip {
+    font-family: "SimHei";
+    color: #6c757d;
+    font-size: 14px;
+    width: 320px;
+    margin:0 auto;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.codecontainer {
+    width: 225px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    position: absolute;
+    z-index: 999;
+    left: 82px;
+}
+.codecontainer img {
+    width: 225px;
+}
+.codecontainer .tips {
+    text-align: center;
+    color: white;
+}
+
+.footer2 {
+    background-image: url(../img/footerbg2.png);
+    background-repeat: no-repeat;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height:60%;
+    /* min-width: 1000px; */
+    min-width: 450px;
+    z-index:-10;
+    zoom: 1;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+}
+
+
+
+/*表单验证*/
+.error {
+    color: red;
+    border: 1px solid red!important;
+}

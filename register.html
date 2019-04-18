@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css" />
+</head>
+<body>
+    <header></header>
+    <div class="container">
+    <div class="content first"  id="first">
+        <div class="steps">
+            <div class="step">
+                <div class="circle">1</div>
+                <span class="stepname active">第一步</span>
+            </div>
+            <div class="dots">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="step other">
+                <div class="circle">2</div>
+                <span class="stepname">第二步</span>
+            </div>
+            <div class="dots">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="step other">
+                <div class="circle">3</div>
+                <span class="stepname">第三步</span>
+            </div>
+            <div style="clear:left"></div>
+        </div>
+        <div class="title">申请试用-手机号验证</div>
+        <form id="message">
+            <div class="inputcontainer">
+                <input type="text" name="phonenum"  id="phonenum"  class="phonenum" placeholder="请输入您的手机号"/>
+            </div>
+            <div class="inputcontainer getcode">
+                <input type="text" name="identifycode" class="identifycode" id="identifycode" placeholder="请输入验证码"/>
+                <input type="button" value="获取验证码" class="codebtn" id="codebtn" />
+            </div>
+            <div class="inputcontainer">
+                <input type="submit" value="提交" class="send" id="send1"/>
+            </div>
+        </form>
+    </div>
+    <div class="content second" style="display: none;" id="second">
+        <div class="steps">
+            <div class="step">
+                <div class="circle"><img src="img/complete.png" /></div>
+                <span class="stepname active">已完成</span>
+            </div>
+            <div class="dots">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="step">
+                <div class="circle">2</div>
+                <span class="stepname">第二步</span>
+            </div>
+            <div class="dots">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="step other">
+                <div class="circle">3</div>
+                <span class="stepname">第三步</span>
+            </div>
+            <div style="clear:left"></div>
+        </div>
+        <div class="title">完善机构信息</div>
+        <form id="infor">
+            <div class="inputcontainer">
+                <input type="text" name="agencyname"  id="agencyname" class="phonenum" placeholder="托辅机构名称"/>
+            </div>
+            <div class="inputcontainer">
+                <input type="text" name="agencyaddress"  id="agencyaddress"  class="phonenum" placeholder="托辅机构地址"/>
+            </div>
+            <div class="inputcontainer">
+                <input type="text" name="agencyschool"  id="agencyschool"  class="phonenum" placeholder="主要生源学校"/>
+            </div>
+            <div class="inputcontainer">
+                <input type="text" name="yourname"  id="yourname" class="phonenum" placeholder="您的姓名"/>
+            </div>
+            <div class="inputcontainer">
+                <input type="text" name="yourduty" id="yourduty" class="phonenum" placeholder="您的职务"/>
+            </div>
+            <div class="inputcontainer">
+                <input type="submit" value="提交" class="send" id="send2"/>
+            </div>
+        </form>
+    </div>
+    <div class="content three" style="display: none;" id="three">
+        <div class="steps">
+            <div class="step">
+                <div class="circle">
+                    <img src="img/complete.png" />
+                </div>
+                <span class="stepname active">已完成</span>
+            </div>
+            <div class="dots">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="step">
+                <div class="circle"><img src="img/complete.png" /></div>
+                <span class="stepname">已完成</span>
+            </div>
+            <div class="dots">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="step">
+                <div class="circle">3</div>
+                <span class="stepname">第三步</span>
+            </div>
+            <div style="clear:left"></div>
+        </div>
+        <div class="title">提交成功</div>
+        <div class="tip">
+            子衿的工作人员会在2个工作日内与您联系<br/>请注意接听固定电话0311-66850123的确认来电 
+        </div>
+        <div class="codecontainer">
+            <img src="img/zijincode.png" />
+        </div>
+
+    </div>
+    </div>
+    <footer class="footer1" id="footer1">
+    </footer>
+    <footer class="footer2" id="footer2" style="display: none;">
+    </footer>
+    <!-- <footer></footer> -->
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="./js/reg.js"></script>
+</html>
