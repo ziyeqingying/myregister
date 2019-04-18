@@ -95,9 +95,22 @@ header {
     border: 0 none; /*去掉边框*/
     outline-style: none; /*去掉轮廓线*/
     height: 40px;
-    border: 1px solid #dddddd;
     border-radius: 2px;
 }
+.inputcontainer input[type="text"] {
+    border: 1px solid #dddddd;
+}
+
+input[type="submit"] {
+    box-shadow: 0 8px 9px 0 rgba(96,94,94,.17);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+input[type="submit"]:hover {
+    margin-top: -2px;
+    
+}
+
 .inputcontainer .phonenum {
     width: 94%;
     padding-left: 6%;
@@ -107,7 +120,6 @@ header {
     padding-left: 6%;
     float: left;
     width: 51%;
-    box-shadow: 0px 0px 1px #dddddd;
 }
 .inputcontainer .codebtn {
     float: left;
