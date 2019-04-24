@@ -1,11 +1,42 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7,  height=device-height">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>注册</title>
     <link rel="stylesheet" type="text/css" href="css/register.css" />
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?199b8a0055e193852ba6822737b053b6";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+
+        var _hmt1 = _hmt1 || [];
+        (function() {
+            var hm1 = document.createElement("script");
+            hm1.src = "//hm.baidu.com/hm.js?4511e89008be20331be7a150cedbc0af";
+            var s1 = document.getElementsByTagName("script")[0];
+            s1.parentNode.insertBefore(hm1, s1);
+        })();var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?199b8a0055e193852ba6822737b053b6";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+
+        var _hmt1 = _hmt1 || [];
+        (function() {
+            var hm1 = document.createElement("script");
+            hm1.src = "//hm.baidu.com/hm.js?4511e89008be20331be7a150cedbc0af";
+            var s1 = document.getElementsByTagName("script")[0];
+            s1.parentNode.insertBefore(hm1, s1);
+        })();
+    </script>
 </head>
 <body>
     <header></header>
@@ -39,14 +70,14 @@
         <div class="title">申请试用-手机号验证</div>
         <form id="message">
             <div class="inputcontainer">
-                <input type="text" name="phonenum"  id="phonenum"  class="phonenum" placeholder="请输入您的手机号"/>
+                <input type="text" name="phonenum"  id="phonenum"  class="phonenum" placeholder="请输入您的手机号"  emptytip="手机号码不能为空"  errortip="手机号码格式不正确"/>
             </div>
             <div class="inputcontainer getcode">
-                <input type="text" name="identifycode" class="identifycode" id="identifycode" placeholder="请输入验证码"/>
+                <input type="text" name="identifycode" class="identifycode" id="identifycode" placeholder="请输入验证码" emptytip="验证码不能为空"/>
                 <input type="button" value="获取验证码" class="codebtn" id="codebtn" />
             </div>
             <div class="inputcontainer">
-                <input type="submit" value="提交" class="send" id="send1"/>
+                <input type="button" value="提交" class="send" id="send1"/>
             </div>
         </form>
     </div>
@@ -79,25 +110,25 @@
         <div class="title">完善机构信息</div>
         <form id="infor">
             <div class="inputcontainer">
-                <input type="text" name="agencyname"  id="agencyname" class="phonenum" placeholder="托辅机构名称"/>
+                <input type="text" name="agencyname"  id="agencyname"  min="4" max="30"  emptytip="机构名称不能为空"   lengthtip="长度不能超过30个字符"  class="phonenum" placeholder="托辅机构名称"/>
             </div>
             <div class="inputcontainer">
-                <input type="text" name="agencyaddress"  id="agencyaddress"  class="phonenum" placeholder="托辅机构地址"/>
+                <input type="text" name="agencyaddress"  id="agencyaddress"   min="4" max="30" emptytip="机构地址不能为空"  lengthtip="长度不能超过30个字符" class="phonenum" placeholder="托辅机构地址"/>
             </div>
             <div class="inputcontainer">
-                <input type="text" name="agencyschool"  id="agencyschool"  class="phonenum" placeholder="主要生源学校"/>
+                <input type="text" name="agencyschool"  id="agencyschool"  min="4" max="30" emptytip="生源学校不能为空"  lengthtip="长度不能超过30个字符" class="phonenum" placeholder="主要生源学校"/>
             </div>
             <div class="inputcontainer">
-                <input type="text" name="yourname"  id="yourname" class="phonenum" placeholder="您的姓名"/>
+                <input type="text" name="yourname"  id="yourname"  min="2" max="4" emptytip="姓名不能为空"  lengthtip="长度不能超过4个字符"  class="phonenum" placeholder="您的姓名"/>
             </div>
             <div class="inputcontainer">
-                <input type="text" name="yourduty" id="yourduty" class="phonenum" placeholder="您的职务"/>
+                <input type="text" name="yourduty" id="yourduty"  min="2" max="30" emptytip="职务不能为空" lengthtip="长度不能超过30个字符" class="phonenum" placeholder="您的职务"/>
             </div>
             <div class="inputcontainer">
-                <input type="submit" value="提交" class="send" id="send2"/>
+                <input type="button" value="提交" class="send" id="send2"/>
             </div>
         </form>
-    </div>
+    </div> 
     <div class="content three" style="display: none;" id="three">
         <div class="steps">
             <div class="step">
@@ -143,5 +174,10 @@
     <!-- <footer></footer> -->
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!-- <script src="./js/reg1.js"></script>
+<script>
+    var r = new require();
+    r._init();
+</script> -->
 <script src="./js/reg.js"></script>
 </html>
